@@ -10,13 +10,13 @@
 
 Please win 1000 times in rock-paper-scissors.
 
-[rps.apk](/files/rps.apk?raw=true)
+[rps.apk](files/rps.apk?raw=true)
 
 # Writeup
 
 When running the app, you'll notice that you really need to win 1000 times *in a row*. Which is a pain unless you're lucky (and patient).
 
-I decided to decompile it to see what's under the hood. So I went to [www.decompileandroid.com](http://www.decompileandroid.com). Downloading, extracting [source.zip](/files/source.zip?raw=true) and snooping around led me to [MainActivity.java](files/source/src/com/example/seccon2015/rock_paper_scissors/MainActivity.java). There's an `int cnt;` variable presumably for holding the amount of victories. Later on there's an interesting if-statement:
+I decided to decompile it to see what's under the hood. So I went to [www.decompileandroid.com](http://www.decompileandroid.com). Downloading, extracting [source.zip](files/source.zip?raw=true) and snooping around led me to [MainActivity.java](files/source/src/com/example/seccon2015/rock_paper_scissors/MainActivity.java). There's an `int cnt;` variable presumably for holding the amount of victories. Later on there's an interesting if-statement:
 
 ```java
 if (1000 == cnt)
@@ -34,9 +34,9 @@ static
 }
 ```
 
-So there's where the `calc()` function came from! After extracting **rps.apk** with 7-zip I could find the library file. Luckily it was also compiled under [**x86**](/files/rps/lib/x86/libcalc.so?raw=true). I moved this to my linux machine and fired some commands:
+So there's where the `calc()` function came from! After extracting **rps.apk** with 7-zip I could find the library file. Luckily it was also compiled under [**x86**](files/rps/lib/x86/libcalc.so?raw=true). I moved this to my linux machine and fired some commands:
 
-![Firing commands](/files/commands.png?raw=true)
+![Firing commands](files/commands.png?raw=true)
 
 ```
 Dump of assembler code for function Java_com_example_seccon2015_rock_1paper_1scissors_MainActivity_calc:
