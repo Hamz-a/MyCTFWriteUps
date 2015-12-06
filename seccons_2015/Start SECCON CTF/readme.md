@@ -4,7 +4,7 @@
 
 **Category:** Exercises
 
-**Point:** 50
+**Points:** 50
 
 **Description:**
 

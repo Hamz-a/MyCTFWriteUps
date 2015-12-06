@@ -4,7 +4,7 @@
 
 **Category:** Binary
 
-**Point:** 100
+**Points:** 100
 
 **Description:**
 
