@@ -6,7 +6,7 @@ We all know that prime numbers are quite important in cryptography. Can you help
 
 # Writeup
 
-We got an IP address + port. A simple nc got us the following output:
+We got an IP address + port. A simple `nc` got us the following output:
 
 ```
 Hi, you know that prime numbers are important, don't you? Help me calculating the next prime!

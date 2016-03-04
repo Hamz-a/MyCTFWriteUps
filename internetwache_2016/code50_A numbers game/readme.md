@@ -13,6 +13,6 @@ Hi, I heard that you're good in math. Prove it!
 Level 1.: x - 13 = -3
 ```
 
-It seems we need to solve the equations automagically. So I wrote a [simple PHP script](web50.php). After launching it, I got the flag:
+It seems we need to solve the equations automagically. So I wrote a [simple PHP script](code50.php). After launching it, I got the flag:
 
 ![1](files/1.png?raw=true)
