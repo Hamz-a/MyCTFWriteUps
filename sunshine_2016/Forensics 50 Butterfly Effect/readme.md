@@ -1,13 +1,5 @@
 # Forensics 50 Butterfly Effect
 
----
-
-**Category:** Forensics
-
-**Points:** 50
-
-# Writeup
-
 We were given an image of a butterfly:
 
 ![butterfly](files/butterfly.png?raw=true)
